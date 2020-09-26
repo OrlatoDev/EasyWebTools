@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--Bootstrap Meta Tag Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap Meta Tag Responsive-->
+    
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="../frontend/css/style.css">
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="../frontend/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/5ce84897d8.js" crossorigin="anonymous"></script>
+    
+    <title>Utilidades</title>
+</head>
+<body class="bg-dark" id="home-page">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a href="../index.html" class="navbar-brand"><i class="fas fa-tools"></i></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="../index.html#home-page" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../index.html#title-utilitys" class="nav-link">Utilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#item-6" class="nav-link">Sugestões</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+                        Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="mailto:SamuelOrlato@gmail.com" style="color: #343A40;">Email</a></li>
+                        <li class="dropdown-item"><a href="https://github.com/OrlatoDev" style="color: #343A40;">Github</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row ml-3 mt-3 mr-3">
+        <h4 class="text-white">
+            <a>Cotações de Moedas</a>
+        </h4>
+    </div>
+    <div class="row ml-3 mt-3 mr-3">
+        <form class="row" oninput=convert()>
+            <div class="col">
+                <input type="number" placeholder="Insira o valor numérico..." class="form-control mb-1" id="number1">
+                <select class="form-control" id="coin1">
+                <option value="DOLAR">USD (Dólar)</option>
+                <option value="EURO">EUR (Euro)</option>
+                <option value="PESO">ARS (Peso Argentino)</option>
+                <option value="BITCOIN">BTC (Bitcoin)</option>
+                <option value="LITECOIN">LTC (Litecoin)</option>
+                <option value="IENEJAPONES">JPY (Iene Japonês)</option>
+                <option value="FRANCOSUICO">CHF (Franco Suíço)</option>
+                <option value="DOLARAUS">AUD (Dólar Australiano)</option>
+                <option value="YUANCHINES">CNY (Yuan Chinês)</option>
+                <option value="NOVOSHEKEL">ILS (Novo Shekel Israelense)</option>
+                <option value="LIBRA">GBP (Libra Esterlina)</option>
+                <option value="DOLARCAD">CAD (Dólar Canadense)</option>
+                <option value="DOLARTURISM">USDT (Dólar Turismo)</option>
+                </select>
+            </div>
+
+            <h2 class="text-white">=</h2>
+
+            <div class="col">
+                <input type="text" placeholder="Resultado..." class="form-control mb-1" id="number2">
+                <select class="form-control" id="coin2">
+                <option value="real">R$ (Real)</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--Bootstrap, Popper.js and jQuery.js JS-->
+    <script src="/backend/js/jquery/dist/jquery.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="/backend/js/popper.js/popper.js"></script>
+    <script src="/backend/js/bootstrap/bootstrap.js"></script>
+    <!--Bootstrap JS-->
+
+    <script type="module" src="/backend/js/coins-module.js"></script>
+</body>
+</html>
